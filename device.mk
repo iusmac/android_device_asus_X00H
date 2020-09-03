@@ -37,7 +37,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    libunwind
+    libunwind.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.X00H
