@@ -61,6 +61,10 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     device/asus/X00H
