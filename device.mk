@@ -53,8 +53,8 @@ PRODUCT_PACKAGES += \
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/cdfinger_input.kl:system/usr/keylayout/cdfinger_input.kl \
-    $(LOCAL_PATH)/keylayout/gx_input.kl:system/usr/keylayout/qwerty.kl
+    $(LOCAL_PATH)/keylayout/cdfinger_input.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/cdfinger_input.kl \
+    $(LOCAL_PATH)/keylayout/gx_input.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/qwerty.kl
 
 # Keymaster
 PRODUCT_PACKAGES += \
