@@ -28,6 +28,9 @@ TARGET_KERNEL_CONFIG := X00H_defconfig
 # Recovery 
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom 
 
+# Sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
 # Inherit from common msm8917-common
 -include device/asus/msm8937-common/BoardConfigCommon.mk
 
