@@ -40,5 +40,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# VNDK
+BOARD_VNDK_RUNTIME_DISABLE := true
+
 # Inherit from the proprietary version
 -include vendor/asus/X00H/BoardConfigVendor.mk
