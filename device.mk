@@ -36,12 +36,12 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 PRODUCT_PACKAGES += \
     libgui_vendor
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    libunwind_vendor
-
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.X00H
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    gxfp_shim
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
