@@ -38,6 +38,10 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 LINEAGE_ROOT="$MY_DIR"/../../..
 DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
+for blob in hw/cdfinger.fingerprint.default.so libgf_ca.so; do
+    sed -i "s|/firmware/image|/vendor/f/image|g" "$DEVICE_BLOB_ROOT/vendor/lib64/$blob"
+done
+
 sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "$DEVICE_BLOB_ROOT/vendor/lib64/libgf_ca.so"
 
 for blob in libarcsoft_hdr.so libarcsoft_nighthawk.so libarcsoft_night_shot.so libarcsoft_panorama_burstcapture.so libarcsoft_videostab.so libmpbase.so; do
